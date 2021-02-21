@@ -1,0 +1,113 @@
+.slideBox {
+  background: #000;
+}
+
+#galleryp {
+  // height: 80%;
+  width: 100%;
+  top: 10px;
+  bottom: 150px;
+  position: absolute;
+
+  .num {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 14px;
+    z-index: 9;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    background:rgba(0,0,0,.4);    
+    -webkit-box-align: center;    
+            align-items: center;
+    left: 0;
+    padding: 0 20px;
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-slide {
+    width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      -o-object-fit: contain;
+         object-fit: contain;
+      // background: #000;
+    }
+  }
+
+  .swiper-wrapper {
+    height: 100%;
+  }
+
+}
+
+#thumbsp {
+  width: 100%;
+  padding: 10px 0;
+  bottom: 10px;
+  box-sizing: border-box;
+  position: absolute;
+
+  .swiper-slide {
+    width: 14.285%;
+    cursor: pointer;
+    img {
+      -o-object-fit: contain;
+         object-fit: contain;
+      width: 100%;
+      max-width: 100%;
+      height: 122px;
+      border: 2px solid #666;
+    }
+  }
+}
+
+.swiper-container-thumbs .swiper-slide-thumb-active img {
+  opacity: 1;
+  border: 2px solid #ff7300;
+}
+
+.viewMask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($color: #000000, $alpha: .8);
+  opacity: 0;
+  z-index: -1;
+
+  .viewBox {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .viewcha {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 30px;
+    cursor: pointer;
+    color:#fff;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    z-index: 999;
+    &:hover {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+  
+}

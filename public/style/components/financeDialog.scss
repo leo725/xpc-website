@@ -1,0 +1,274 @@
+.dialogs{
+  .finance-dialog{
+    padding: 0 !important;
+    .finTab{
+      margin-top: 20px;
+      .ant-tabs-nav .ant-tabs-tab{
+        font-size: 21px;
+        padding: 16px 45px;
+        font-weight: bold;
+      }
+      .ant-tabs-nav .ant-tabs-tab:hover{
+        color: #FF7300
+      }
+      .ant-tabs-nav .ant-tabs-tab-active{
+        color: #FF7300
+      }
+      .ant-tabs-ink-bar{
+        background-color: #ff7300;
+      }
+      .tabCont{
+        padding: 10px 45px;
+      }
+    }
+    .dialog-body{
+      padding: 10px 45px;
+      color: #2E2E2E;
+      height: 500px;
+      overflow-y: scroll;
+      .finance-title{
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .finance-price{
+        font-size: 20px;
+        .price{
+          color: #FF7300;
+          font-size: 24px;
+        }
+        .price-zdj{
+          color: #7B7B7B;
+          font-size: 16px;
+          margin-left: 30px;
+        }
+      }
+      .fenqi-list{
+        display: -webkit-box;
+        display: flex;
+        margin: 40px 0;
+        li{
+          width: 230px;
+          height: 85px;
+          border:1px solid rgba(204, 204, 204, 1);
+          box-shadow:0px 2px 8px 0px rgba(214,214,214,1);
+          border-radius:4px;
+          background: url(../../img/icon-coin.png) no-repeat;
+          background-position: 110% 40px;
+          font-size: 30px;
+          padding-left: 10px;
+          cursor: pointer;
+          &:not(:first-child){
+            margin-left: 30px;
+          }
+          &.active{
+            box-shadow:0px 2px 8px 0px rgba(255,119,31, 0.5);
+            border: 1px solid #FF771F;
+            color: #FF771F;
+            .circle{
+              display: none;
+            }
+            .anticon-check-circle{
+              display: inline-block;
+            }
+          }
+          .circle{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #C2C2C2;
+            border-radius: 50%;
+          }
+          .anticon-check-circle{
+            display: none;
+          }
+          .qi{
+            font-size: 22px;
+            color: #FF771F;
+          }
+          .yuegong{
+            font-size: 16px;
+            color: #2D2D2D;
+            margin-left: 16px;
+          }
+          .sf{
+            color: #DDAF4D;
+            font-size: 18px;
+          }
+        }
+      }
+      .zhuLing{
+        // padding-bottom: 60px;
+        .cpName{
+          font-size: 18px;
+          color: #767676;
+          margin: 20px 0 14px;
+        }
+        .cpItem{
+          width: 700px;
+          height: 88px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          display: flex;
+          align-items: center;
+          padding: 30px 33px;
+          margin-top: 20px;
+          box-sizing: border-box;
+          justify-content: space-between;
+          box-shadow:0px 2px 8px 0px rgba(214,214,214,1);
+          
+          .qi{
+            font-size: 26px;
+            color: #FF7300;
+          }
+          .yuegong{
+            font-size: 18px;
+            color: #2D2D2D;
+            margin-left: 16px;
+          }
+          .sf{
+            color: #DDAF4D;
+            font-size: 20px;
+            margin-left: 70px;
+            display: inline-block;
+            span{
+              font-size: 26px;
+              color: #FF7300;
+            }
+          }
+          .shBtn{
+            width: 98px;
+            height: 32px;
+            border-radius: 32px;
+            background: #FF7300;
+            color: #fff;
+            line-height: 32px;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+        .info{
+          width: 700px;
+          border: 1px solid;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 16px 20px;
+          margin-top: 15px;
+          position: relative;
+          background: #FFFCF5;
+          display: none;
+          &::before{
+            box-sizing: content-box;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -16px;;
+            left:41px;
+            padding:0;
+            border-bottom:8px solid #FFFFFF;
+            border-top:8px solid transparent;
+            border-left:8px solid transparent;
+            border-right:8px solid transparent;
+            display: block;
+            content:'';
+            z-index: 12;
+          }
+          &::after{
+            box-sizing: content-box;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -18px;;
+            left:40px;
+            padding:0;
+            border-bottom:9px solid #cccccc;
+            border-top:9px solid transparent;
+            border-left:9px solid transparent;
+            border-right:9px solid transparent;
+            display: block;
+            content:'';
+            z-index:10
+          }
+          .sanjiao{
+            width: 0;
+            height: 0;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom:10px solid #FFFCF5;
+            border-color:transparent transparent #333;/*透明 透明  灰*/
+            position: absolute;
+            top: -10px;
+            left: 100px;
+          }
+          .tit{
+            margin-bottom: 10px;
+            span{
+              color: #DEB04E;
+              font-size: 18px;
+              margin-left: 8px;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          .divider{
+            height: 0;
+            width: 100%;
+            margin: 16px 0;
+            border-top: 1px solid #DCDCDC;
+          }
+          .txt{
+            font-size: 15px;
+            color: #2E2E2E;
+            padding-bottom: 15px;
+          }
+        }
+      }
+      .input-box-item{
+        display: -webkit-box;
+        display: flex;
+        height: 60px;
+        margin-bottom: 0 !important;
+        .ant-form-item-label{
+          width: 100px;
+        }
+        .ant-form-item-control-wrapper{
+          -webkit-box-flex: 1;
+                  flex: 1;
+          .ant-form-item-control {
+            width: 100%;
+          }
+        }
+      }
+      .submit-btn{
+        background: #ff7300;
+        border: 0;
+        width: 150px;
+        margin: 30px auto 0;
+        display: block;
+      }
+    }
+    .reserve-res-box2{
+      text-align: center;
+      padding: 47px 0 30px;
+      .res-tit{
+        font-size: 32px;
+        color: #2E2E2E;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      span{
+        color: #7B7B7B;
+        font-size: 16px;
+      }
+      .code-box{
+        padding-top: 20px;
+        img{
+          width: 200px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,559 @@
+.serviceOpen {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  
+  .productSlide {
+    width: 600px;
+    height: 550px;
+    // background: #000;
+  }
+
+  .textBox {
+    width: 580px;
+
+    .sellTitle {
+      font-size: 24px;
+      color: #2e2e2e;
+    }
+
+    .cat-tabs{
+      .ant-tag{
+        margin-top: 4px;
+      }
+    }
+
+    .price {
+      margin-top: 20px;
+
+      .pricetype {
+        font-size: 28px;
+        color: #ff7300;
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .newprice {
+        text-decoration: line-through;
+        color: #a5abb2;
+        font-size: 14px;
+        padding-left: 6px;
+      }
+
+      .testReport{
+        float: right;
+        height: 36px;
+        background: #F1F9EF;
+        border-radius: 18px;
+        padding: 0 16px;
+        color: #22AC38;
+        line-height: 36px;
+        font-size: 18px;
+        cursor: pointer;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center;
+        span{
+          font-size: 14px;
+        }
+      }
+    }
+
+    .baseInfo {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 10px 0;
+      background: #fbfbfb;
+
+      .info {
+        width: 144px;
+        border-right: 1px solid #e5e5e5;
+        text-align: center;
+        
+        &:last-child {
+          border-right: none;
+        }
+
+        .txt {
+          font-size: 16px;
+          color: #2e2e2e;
+          font-weight: bold;
+        }
+
+        .label {
+          font-size: 12px;
+          color: #b2b2b2;
+        }
+      }
+      
+    }
+
+    .banner {
+      margin-top: 30px;
+      text-align: center;
+      min-height: 58px;
+      img{
+        cursor: pointer;
+      }
+    }
+
+    .tooBtn {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-top: 90px;
+
+      .btnItem {
+        width: 174px;
+        height: 48px;
+        border-radius: 4px;
+        margin-right: 20px;
+        background: #ff7300;
+        color: #fff;
+        text-align: center;
+        line-height: 48px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .btnr {
+        background: #fc4d2b;
+      }
+    }
+  }
+}
+
+.serive{
+  display: -webkit-box;
+  display: flex;
+  border: 1px solid #EFEFEF;
+  border-radius: 4px;
+  padding: 34px 0;
+  margin: 38px 0;
+  .service-left{
+    width: 334px;
+    padding-left: 34px;
+    display: -webkit-box;
+    display: flex;
+    margin-right: 30px;
+    img{
+      height: 86px;
+      width: 86px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+    .service-left-main{
+      -webkit-box-flex: 1;
+              flex: 1;
+      padding-left: 22px;
+      font-size: 20px;
+      color: #2E2E2E;
+      border-right: 2px solid #E5E5E5;
+      p{
+        margin-bottom: 16px;
+      }
+      div{
+        width: 124px;
+        line-height: 38px;
+        background: #ff7300;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        span{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .service-right{
+    -webkit-box-flex: 1;
+            flex: 1;
+    padding-right: 30px;
+    
+  }
+}
+
+.baseInfo-tit {
+  font-size: 22px;
+  color: #2e2e2e;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.baseInfo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 20px 0;
+  background: #fbfbfb;
+
+  .info {
+    width: 144px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.info-btn{
+      color: #ff7300;
+      cursor: pointer;
+    }
+
+    .txt {
+      font-size: 16px;
+      color: #2e2e2e;
+      font-weight: bold;
+    }
+
+    .label {
+      font-size: 12px;
+      color: #b2b2b2;
+    }
+  }
+}
+
+.config-parms{
+  #posBotton{
+    margin-top: 40px;
+  }
+  .moreConfigBox{
+    position: relative;
+    .moreConfigBtn {
+    text-align: center;
+    border: 1px solid #fd521d;
+    color: #fd521d;
+    height: 36px;
+    width: 212px;
+    border-radius: 4px;
+    line-height: 36px;
+    font-size: 16px;
+    margin: 20px auto 40px;
+    cursor: pointer;
+    &:hover{
+      background-color: #fd521d;
+      color: #fff;
+    }
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: -webkit-gradient(linear,left bottom, left top,from(#fff),to(rgba(255,255,255,.6)));
+      background: linear-gradient(to top,#fff,rgba(255,255,255,.6));
+      opacity: .6;
+      filter: alpha(opacity=60);
+    }
+  }
+  }
+  .parameter {
+    width: 1200px;
+    height: 516px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    &.active{
+      height: auto;
+    }
+    .anchorNav {
+      width: 214px;
+      position: relative;
+      float: left;
+
+      &.fixed-pos {
+        position: fixed;
+        top: 0px;
+      }
+
+      &.absolute-pos {
+        position: absolute;
+        bottom: 20px;
+      }
+
+      .navItem {
+        width: 100%;
+        height: 48px;
+        border-bottom: 1px solid #F4F4F4;
+        line-height: 48px;
+        text-align: center;
+        font-size: 19px;
+        color: #2e2e2e;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+          background: #ff7300;
+          color: #fff;
+
+          &::after {
+            content: '';
+            position: absolute;
+            right: -16px;
+            top: 16px;
+            width: 0;
+            height: 0;
+            border-width: 8px;
+            border-style: solid;
+            border-color: transparent transparent transparent #ff7300;
+          }
+        }
+      }
+    }
+
+    .anchorFloor {
+      width: 955px;
+      margin-left: 244px;
+      margin-top: 52px;
+
+      .floorItem {
+        width: 100%;
+        border-left: 1px solid #eee;
+        position: relative;
+
+        .label {
+          background: #EEEEEE;
+          border: 1px solid #eee;
+          color: #ff7300;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          position: relative;
+          font-size: 16px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 18px;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            border: 2px solid #ff7300;
+          }
+        }
+
+        .itemBox {
+          display: -webkit-box;
+          display: flex;
+          flex-wrap: wrap;
+
+          .item {
+            width: 318px;
+            height: 40px;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+.guess-like{
+  background: #F8F8F8;
+  padding: 30px 0 70px;
+}
+
+.listImg {
+  width: 1260px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+
+  .carImg {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+
+    img {
+      width: 590px;
+      height: 442.5px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      border: 1px dotted #e5e5e5;
+    }
+
+    .cartxt {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background: rgba($color: #000000, $alpha: .2);
+      color: #fff;
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+}
+
+.imgMore {
+  margin: 30px auto 30px;
+  height: 54px;
+  width: 200px;
+  line-height: 54px;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+
+  &:hover {
+    color: #ff7300;
+    border-color: #ff7300;
+  }
+}
+
+// 我要优惠
+.discount-container {
+  .discount-page1 {
+    color: #2E2E2E;
+
+    .car-model {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .car-info {
+      display: -webkit-box;
+      display: flex;
+      border-bottom: 1px solid #F0F0F0;
+
+      .car-info-l {
+        -webkit-box-flex: 1;
+        flex: 1;
+        padding-top: 8px;
+
+        span {
+          font-size: 14px;
+          color: #7B7B7B;
+          padding: 0 5px;
+          line-height: 38px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+
+      .car-info-r {
+        font-size: 14px;
+        color: #7B7B7B;
+
+        span {
+          font-size: 26px;
+          color: #FF7300;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .discount-form {
+      padding-top: 40px;
+      text-align: center;
+      .input-box-item {
+        display: block;
+        padding: 0 64px;
+        height: 60px;
+        margin-bottom: 0;
+        .ant-form-explain{
+          text-align: left;
+        }
+        .form-ipt{
+          width: 460px;
+          
+        }
+      }
+
+      .submit-btn-box {
+        margin-top: 40px;
+
+        .submit-btn {
+          background: #ff7300;
+          border: 0;
+          width: 150px;
+        }
+
+        p {
+          color: #7B7B7B;
+          font-size: 16px;
+          margin-top: 30px;
+
+          span {
+            color: #ff7300;
+          }
+        }
+      }
+    }
+  }
+  .discount-page2{
+    text-align: center;
+    .res-tit{
+      font-size: 32px;
+      color: #2E2E2E;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    span{
+      color: #7B7B7B;
+      font-size: 16px;
+    }
+    .code-box{
+      padding-top: 20px;
+      img{
+        width: 200px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.report-code-box{
+  img{
+    width: 140px;
+    height: 140px;
+  }
+  p{
+    font-size: 12px;
+    color: #7B7B7B;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

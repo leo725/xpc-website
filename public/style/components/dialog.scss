@@ -1,0 +1,65 @@
+.dialogs {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba($color: #000000, $alpha: 0.6);
+
+  .dialog-main {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 10px;
+    width: 800px;
+    padding-top: 47px;
+    padding-bottom: 30px;
+
+    .dialog-body {
+      overflow-y: auto;
+      padding: 0 40px;
+
+      .dialog-header {
+        font-size: 26px;
+        color: #2E2E2E;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    .dialog-close {
+      position: absolute;
+      right: -20px;
+      top: -20px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+      text-align: center;
+      background: #F5F5F7;
+      border-radius: 50%;
+      z-index: 100;
+      cursor: pointer;
+      -webkit-transition: all linear 0.25s;
+      transition: all linear 0.25s;
+
+      &:hover {
+        -webkit-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+      }
+    }
+
+    .dialog-circle-logo {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      width: 100px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+}

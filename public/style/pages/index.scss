@@ -1,0 +1,634 @@
+.headBox {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  // background: url(../../img/banner.png) #07370d ;
+  // background-size: 1920px 100%;
+  // background-position: 50%;
+  position: relative;
+  .videoBox{
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    font-size: 0;
+    .playBtn{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      margin-left: -25px;
+      z-index:999;
+      cursor: pointer;
+    }
+  }
+}
+.mapShopBox{
+  width: 100%;
+  height: 600px;
+  background: url('../../img/map-bg.png') no-repeat;
+  padding-top: 60px;
+  .shopMap{
+    display: flex;
+    .map{
+      width: 800px;
+      height: 480px;
+      #container {
+        width: 100%;
+        height: 480px;
+      }
+    }
+    .addressBox{
+      width: 400px;
+      height: 480px;
+      background: #fff;
+      .tit{
+        width: 100%;
+        height: 80px;
+        font-size: 26px;
+        color: #2E2E2E;
+        text-align: center;
+        line-height: 80px;
+        border-bottom: 1px solid  #EFEFEF;
+      }
+      .address{
+        width: 100%;
+        height: 400px;
+        overflow-y: auto;
+        .item{
+          width: 100%;
+          height: 106px;
+          padding:25px;
+          padding-right: 10px;
+          padding-left: 38px;
+          cursor: pointer;
+          color: #2E2E2E;
+          font-size: 13px;
+          border-bottom: 1px solid #EFEFEF;
+          .tip{
+            font-size: 18px;
+            color: #191919;
+            
+          }
+          .phone{
+            margin: 5px 0;
+            color: #E2E2E2;
+            line-height: 1;
+          }
+          &:last-of-type{
+            border: none;
+          }
+          &.active{
+            background: #F8F8F8;
+            .tip{
+              font-weight: bold;
+            }
+            .phone{
+              color: #2E2E2E;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.newsTit{
+  padding-top: 60px;
+  .tit{
+    font-size: 34px;
+    color: #2E2E2E;
+  }
+  .tits{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #7B7B7B;
+    .ywtit{
+      font-size: 30px;
+      color: #ECECEC;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    a{
+      color: #2E2E2E;
+    }
+  }
+}
+.newsBox{
+  display: flex;
+  padding: 40px 0 60px;
+  
+  .newsItem{
+    width: 386px;
+    margin-right: 20px;
+    border:  1px solid #F0F0F0;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, .1);
+    &:hover{
+      box-shadow: 3px -3px 8px 0 rgba(0, 0, 0, 0.2);
+      .content{
+        .year,.month {
+          color: #2E2E2E;
+        }
+        .month{
+          .getMore{
+            display: block;
+          }
+        }
+      }
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    
+    img{
+      font-size: 0;
+      height: 222px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .content{
+      padding: 28px 20px;
+      .tit{
+        font-size: 18px;
+        color: #242424;
+        margin-bottom: 20px;
+      }
+      .info{
+        font-size: 13px;
+        color: #787878;
+        margin-bottom:30px;
+        
+      }
+      .year{
+        font-size: 14px;
+        font-weight: bold;
+        color: #E0E0E0;
+      }
+      
+      .month{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 53px;
+        color: #E0E0E0;
+        .getMore{
+          font-size: 12px;
+          color: #2E2E2E;
+          display: none;
+          a{
+            color: #2E2E2E;
+          }
+        }
+        img{
+          width: 12px;
+          height: 12px;
+        }
+      }
+      .more{
+        font-size: 12px;
+      }
+    }
+    
+  }
+}
+.search {
+  margin: 0 auto;
+  width: 655px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px;
+}
+
+.search .title {
+  text-align: center;
+  img{
+    height: 62px;
+  }
+}
+.serchBox {
+  width: 655px;
+  height: 57px;
+  margin-top: 30px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #fff;
+  color: #495056;
+}
+.serchBox input{
+  width: 70%;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+  padding-right: 0;
+  font-size: 18px;
+  border:0;
+}
+.serchBox .search-btn {
+  line-height: 51px;
+  height: 51px;
+  width: 105px;
+  padding: 0;
+  background: #ff7300;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  border:0;
+  cursor: pointer;
+}
+.serchBox .search-btn:hover{
+  background: #f1750f;
+}
+
+.smallCarCont{
+  width: 100%;
+  background:#fff;
+  position: relative;
+  overflow: hidden;
+  .banner {
+    width: 100%;
+    height: 116px;
+    background-color: #ff7300;
+    margin-bottom: 40px;
+  }
+  .carType{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    .carTypeL{
+      width: 270px;
+      height: 406px;
+      float: left;
+    }
+    .carTypeR{
+      width: 920px;
+      float: right;
+      &.carTypeR2{
+        ul>li{
+          background: #F8FDFF;
+        }
+      }
+      ul{
+        li{
+          float: left;
+          width: 456px;
+          height: 200px;
+          background:#f8f8f8;
+          margin-bottom: 6px;
+          margin-right: 6px;
+          -webkit-transition: all .5s;
+          transition: all .5s;
+          box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, .1);
+          &:nth-child(2n){
+            margin-right: 0;
+          }
+          &:hover{
+            box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, .2);
+          }
+          img{
+            width: 300px;
+            height: 100%;
+            padding: 6px;
+            float: left;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
+          .info{
+            float: right;
+            height: 100%;
+            width: 150px;
+            padding-top: 40px;
+            p{
+              text-align: center;
+            }
+            .brand{
+              font-size: 20px;
+              color: #191919;
+            }
+            .plate{
+              font-size: 14px;
+              color: #7B7B7B;
+            }
+            .price{
+              font-size: 22px;
+              color: #FF7300;
+              span{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.buybox{
+  position: relative;
+  background: transparent;
+  height: 340px;
+  transition: all  2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+.buysell{
+  width: 1200px;
+  margin-left: -600px;
+  position: relative;
+  left: 50%;
+  top: 40px;
+  transition: all  2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+  z-index: 3;
+  height: 271.5px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #dfe3e3;
+  border-top: 0;
+  box-shadow: 0 1px 4px 0 rgba(88, 100, 117, .2);
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 30px 40px 0 40px;
+  .selmodel{
+    .tit{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      a{
+        color:#191919;
+        &:hover{
+          color: #ff7300;
+        }
+        &:hover i{
+          color: #ff7300 !important;
+        }
+      }
+    }
+  }
+  .sell-gou{
+    height: 100%;
+    width: 60%;
+    .buysearch{
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .buyItem-s{
+        flex-basis: 94px;
+        text-align: center;
+        margin-bottom: 10px;
+        color:#231815;
+        cursor: pointer;
+        &:hover{
+          color: #ff7300;
+        }
+        img{
+          width: 18px;
+          height: 18px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .sell-mai{
+    height: 100%;
+    width: 378px;
+    flex-basis: 387px;
+  }
+  .searchMai{
+    font-size: 16px;
+    input{
+      border: none;
+      background: #f6f5f4;
+      width: 248px;
+      height: 54px;
+      text-indent: 20px;
+      border-radius: 4px;
+    }
+    button{
+      border: 0;
+      background: #ff7300;
+      color: #fff;
+      width: 116px;
+      height: 54px;
+      border-radius: 0 2px 2px 0;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      
+    }
+  }
+  .pinggu{
+    width: 379px;
+    height: 60px;
+    border-radius: 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffcea3), to(#ffeac9));
+    background-image: linear-gradient(to right, #ffcea3, #ffeac9);
+    color: #c05e23;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 0 40px;
+    margin-top: 26px;
+    font-size: 16px;
+    cursor: pointer;
+    .gu-tit{
+      font-size: 20px;
+    }
+  }
+}
+
+
+.hotCar{
+  width: 100%;
+  .hotCar-tit{
+    font-size: 30px;
+    color: #2e2e2e;
+    width: 1200px;
+    line-height: 28px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .hotCar-nav{
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      margin-left: 30px;
+      .item{
+        margin-right: 28px;
+        font-size: 16px;
+        color: #999;
+        cursor: pointer;
+        line-height: 20px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid transparent;
+      }
+      .active{
+        color: #ff7300;
+        border-bottom-color: #ff7300;
+      }
+    }
+  }
+}
+
+
+
+.index-carmore {
+  padding-top: 20px;
+  padding-bottom: 120px;
+  text-align: center;
+  height: 14px;
+}
+.index-carmore a:hover {
+  color:#ff7300 ;
+  border-color: #ff7300;
+}
+.index-carmore a {
+  color: #7b7b7b;
+  width: 200px;
+  height: 54px;
+  border: 1px solid #e2e2e2;
+  display: inline-block;
+  line-height: 54px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.process{
+  width: 100%;
+  height: 430px;
+  background: #f9f9f9;
+}
+
+.step-content{
+  position: relative ;
+  top: 120px;
+  left: 90px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  .item{
+    font-size: 14px;
+    text-align: center;
+    .tit{
+      font-size: 26px;
+      color: #191919;
+      margin: 20px 0;
+    }
+  }
+  .pro-jian{
+    margin: 0 42px;
+  }
+}
+.footbuysell{
+  height: 120px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+
+}
+.sell{
+  width: 1200px;
+  display: -webkit-box;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+          align-items: center;
+  background-image: url('../../img/index-footbg.png');
+  position: relative;
+  .sell-r {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    position: absolute;
+    left: 600px;
+    top: 30px;
+    padding-left: 30px;
+    .sellBtn{
+      width: 180px;
+      height: 64px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      list-style: 64px;
+      background: #ff7300;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .rbtn{
+      background: #ffab00;
+    }
+  }
+}
+
+.baranAll {
+  width: 1130px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
+  .baranBox{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    .baranItem{
+      width: 350px;
+      display: -webkit-box;
+      display: flex;
+      margin-bottom: 10px;
+      -webkit-box-align: start;
+              align-items: flex-start;
+      .zi{
+        width: 20px;
+        height: 24px;
+        line-height: 24px;
+        color: #ff7300;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .barantxt{
+        flex-wrap: wrap;
+        display: -webkit-box;
+        display: flex;
+        width: 100%;
+        .cartxt{
+          height: 20px;
+          line-height: 24px;
+          margin-right: 15px;
+          font-size: 14px;
+          color: #495056;
+          cursor: pointer;
+          &:hover{
+            color: #ff7300;
+          }
+        }
+      }
+    }
+  }
+}

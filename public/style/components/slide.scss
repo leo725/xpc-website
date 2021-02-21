@@ -1,0 +1,107 @@
+.slideBox{
+  // background: #000;
+}
+
+#gallery {
+  // height: 80%;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  .num{
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    z-index: 9;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: .3);
+    text-align: left;
+    left: 0;
+    padding: 0 20px;
+    width: 100%;
+    span{
+      font-size: 20px;
+    }
+    .numindex {
+      font-size: 20px;
+    }
+  }
+  .swiper-slide {
+    width: 100%;
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: 450px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      border: 1px dotted #e5e5e5;
+      // background: #000;
+    }
+  }
+  .swiper-wrapper {
+    height: 100%;
+  }
+  
+}
+.out_container {
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+  position: relative;
+}
+#thumbs {
+  // height: 20%;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  // margin: 0 auto;
+  // overflow: hidden;
+  // position: unset;
+  .swiper-slide {
+    width: 20%;
+    img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      // background: #000;
+      width: 100%;
+      max-width: 100%;
+      height: 80px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+  }
+  .thumbs-btn {
+    width: 20px;
+    background-size: contain;
+  }
+}
+
+.swiper-container-thumbs .swiper-slide-thumb-active img {
+  opacity: 1;
+  border: 2px solid #ff7300 !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled{
+  pointer-events: auto !important;
+  // opacity: 1 !important;
+  cursor: not-allowed;
+}
+
+.swiper-container .hide{
+  opacity:0;
+}
+.swiper-button-next,.swiper-button-prev{
+  -webkit-transition:opacity 0.5s;
+  transition:opacity 0.5s;
+  background: rgba($color: #000000, $alpha: 0.4);
+  border-radius: 4px;
+  height: 64px;
+  width: 32px;
+  padding-left: 4px;
+  margin-top: -40px;
+}
+.swiper-button-next:not(.swiper-button-disabled):hover,.swiper-button-prev:not(.swiper-button-disabled):hover{
+  color: #ff7300;
+}

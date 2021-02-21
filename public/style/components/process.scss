@@ -1,0 +1,60 @@
+.process{
+  width: 100%;
+  height: 430px;
+  background: #f9f9f9;
+  overflow: hidden;
+  .step-tab {
+    position: relative;
+    top: 67px;
+    left: 0;
+    z-index: 11;
+    display: -webkit-box;
+    display: flex;
+    .tit{
+      width: 120px;
+      display: inline-block;
+      font-size: 30px;
+      color: #2e2e2e;
+      margin-right: 40px;
+    }
+    span {
+      display: inline-block;
+      width: 66px;
+      font-size: 16px;
+      color: #181818;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+    }
+    .active {
+      border-bottom: 3px solid #ff7300;
+    }
+    em {
+      padding: 0 20px;
+      color: #d2d2d2;
+    }
+  }
+  .step-content {
+    position: relative ;
+    top: 120px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    .item{
+      font-size: 14px;
+      text-align: center;
+      height: 220px;
+      .tit{
+        font-size: 26px;
+        color: #191919;
+        margin: 20px 0;
+      }
+      .desc {
+        width: 160px;
+      }
+    }
+    .pro-jian{
+      margin: 0 42px;
+    }
+  }
+}

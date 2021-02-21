@@ -1,0 +1,60 @@
+.siderNav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 100%;
+}
+
+.siderNav .toolbar-l {
+  width: 26px;
+  height: 80px;
+  background-color: #434857;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-align: center;
+  line-height: 14px;
+  padding-top: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+
+.siderNav .fix-right {
+  width: 40px;
+  height: 100%;
+  background: #2a2c37;
+  text-shadow: 0 0 black;
+  display: block;
+}
+
+.toolbar{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+.tool{
+  cursor: pointer;
+  width:40px;
+  height: 40px;
+  line-height: 40px;
+}
+.tool:hover{
+  background:rgba(0, 0, 0, .6);
+}
+.w1280 .fix-right {
+  display: none;
+}
+.click-active .fix-right,
+.w1280 .toolbar-l {
+  display: block;
+}
+
+.click-active .toolbar-l {
+  right: 40px;
+}

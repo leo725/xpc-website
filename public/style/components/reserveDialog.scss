@@ -1,0 +1,62 @@
+.reserve-box{
+  .reserve-submit-box{
+    color: #2E2E2E;
+    text-align: center;
+    .car-model{
+      font-size: 20px;
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+    .reserve-form{
+      .input-box-item{
+        height: 60px;
+        margin-bottom: 0;
+        .ant-form-explain{
+          margin-bottom: 0;
+          text-align: left;
+        }
+      }
+      .mobile-input{
+        width: 360px;
+      }
+      .submit-btn-box{
+        margin-top: 20px;
+        .submit-btn{
+          background: #ff7300;
+          border: 0;
+          width: 150px;
+        }
+        p{
+          color: #7B7B7B;
+          font-size: 16px;
+          margin-top: 30px;
+          span{
+            color: #ff7300;
+          }
+        }
+      }
+    }
+  }
+  .reserve-res-box{
+    text-align: center;
+    .res-tit{
+      font-size: 32px;
+      color: #2E2E2E;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    span{
+      color: #7B7B7B;
+      font-size: 16px;
+    }
+    .code-box{
+      padding-top: 20px;
+      img{
+        width: 200px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}

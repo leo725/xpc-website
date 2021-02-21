@@ -1,0 +1,206 @@
+.screen{
+  width: 1198px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+}
+.screenItem{
+  border-bottom: 1px solid #e6e6e6;
+  min-height: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.screenTit{
+  width: 70px;
+  height: 100%;
+  line-height: 50px;
+  font-size: 14px;
+  color: #7a838d;
+  text-align: center;
+}
+.screen-l{
+  width: 100%;
+}
+.brand-top {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  .brand {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .brandItem {
+    padding: 0 6px;
+    color: #495056;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+
+  .brandItem:hover {
+    color: #ff7300;
+  }
+
+  .brandItem.active {
+    color: #fff;
+    background: #ff7300;
+    border-radius: 4px;
+  }
+}
+.baran-all{
+  border-top: 1px solid #e6e6e6;
+  display: none;
+  width: 1130px;
+  margin-left: 70px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  .baranBox{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    .baranItem{
+      width: 350px;
+      display: -webkit-box;
+      display: flex;
+      margin-bottom: 10px;
+      -webkit-box-align: start;
+              align-items: flex-start;
+      .zi{
+        width: 20px;
+        height: 24px;
+        line-height: 24px;
+        color: #ff7300;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .barantxt{
+        flex-wrap: wrap;
+        display: -webkit-box;
+        display: flex;
+        width: 100%;
+        .cartxt{
+          height: 20px;
+          line-height: 24px;
+          margin-right: 15px;
+          font-size: 14px;
+          color: #495056;
+          cursor: pointer;
+          &:hover{
+            color: #ff7300;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.brandmore{
+  width: 60px;
+  text-align: center;
+}
+.brandmore i{
+  margin: 0 4px;
+  font-size: 12px;
+}
+.pricebtn{
+  width: 54px;
+  height: 22px;
+  line-height: 18px;
+  font-size: 12px;
+  margin-top: -1px;
+  margin-left: 5px;
+  color: #ff7300;
+  border: 1px solid #ff7300;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.moreselect{
+  padding: 2px 0 6px 0px;
+  flex-wrap: wrap;
+}
+.moreselect .brandItem{
+  margin: 0;
+  margin-top:8px;
+}
+.brandmore:hover{
+  color: #ff7300;
+  cursor: pointer;
+}
+.filterClear{
+  padding: 8px 0;
+  height: auto;
+  overflow: hidden;
+  color: #7b7b7b;
+  min-height: 46px;
+  .tit{
+    width: 79px;
+    float: left;
+    padding: 0 3px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #a5abb2;
+    margin-bottom: 0;
+  }
+  .filter{
+    float: left;
+    max-width: 850px;
+    
+    .filterItem{
+      float: left;
+      margin: 2px 4px 2px 0;
+      height: 24px;
+      line-height: 24px;
+      padding: 0 5px 0 8px;
+      border: 1px solid #e6e6e6;
+      font-size: 14px;
+      cursor: pointer;
+      color: #ff7300;
+      &:hover{
+        border: 1px solid #ff7300;
+        i{
+          color: #ff7300 !important;
+        }
+      }
+      i{
+        color: #939393;
+      }
+      span{
+        color: #2e2e2e;
+      }
+    }
+  }
+  .reset {
+    margin: 0 20px;
+    color: #2E2E2E;
+    float: left;
+    line-height: 26px;
+    &:hover {
+      color: #ff7300;
+      cursor: pointer;
+    }
+  }
+  .num{
+    color: #a5abb2;
+    width: 160px;
+    float: left;
+    line-height: 26px;
+  }
+}

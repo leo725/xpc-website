@@ -1,0 +1,42 @@
+{
+  "name": "small-cart-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js -p 3033",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js -p 1089",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-source-maps": "^0.0.3",
+    "antd": "3.25.0",
+    "axios": "^0.19.0",
+    "babel-plugin-import": "^1.12.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "cookie-parser": "^1.4.4",
+    "echarts": "^4.6.0",
+    "echarts-for-react": "^2.0.15-beta.1",
+    "express": "^4.17.1",
+    "js-cookie": "^2.2.1",
+    "mini-css-extract-plugin": "^0.8.2",
+    "next": "9.1.2",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.2.0",
+    "node-sass": "^4.13.0",
+    "nprogress": "^0.2.0",
+    "qrcode.react": "^1.0.0",
+    "react": "16.11.0",
+    "react-cookies": "^0.1.1",
+    "react-count-to": "^0.12.0",
+    "react-dom": "16.11.0",
+    "react-lazyload": "^2.6.5",
+    "react-transition-group": "^4.3.0",
+    "swiper": "^5.2.1",
+    "video-react": "^0.14.1",
+    "webpack-filter-warnings-plugin": "^1.2.1"
+  }
+}
